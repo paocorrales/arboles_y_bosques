@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="rh <= 0.964\ngini = 0.111\nsamples = 281147\nvalue = [264536, 16611]\nclass = No niebla", fillcolor="#e78945"] ;
+1 [label="rh <= 0.911\ngini = 0.067\nsamples = 260845\nvalue = [251819, 9026]\nclass = No niebla", fillcolor="#e68640"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="rh <= 0.808\ngini = 0.038\nsamples = 221432\nvalue = [217111, 4321]\nclass = No niebla", fillcolor="#e6843d"] ;
+1 -> 2 ;
+3 [label="gini = 0.023\nsamples = 161505\nvalue = [159643, 1862]\nclass = No niebla", fillcolor="#e5823b"] ;
+2 -> 3 ;
+4 [label="gini = 0.079\nsamples = 59927\nvalue = [57468, 2459]\nclass = No niebla", fillcolor="#e68641"] ;
+2 -> 4 ;
+5 [label="hours <= 10.5\ngini = 0.21\nsamples = 39413\nvalue = [34708, 4705]\nclass = No niebla", fillcolor="#e99254"] ;
+1 -> 5 ;
+6 [label="gini = 0.172\nsamples = 28166\nvalue = [25498, 2668]\nclass = No niebla", fillcolor="#e88e4e"] ;
+5 -> 6 ;
+7 [label="gini = 0.297\nsamples = 11247\nvalue = [9210, 2037]\nclass = No niebla", fillcolor="#eb9d65"] ;
+5 -> 7 ;
+8 [label="windspeed <= 3.5\ngini = 0.468\nsamples = 20302\nvalue = [12717, 7585]\nclass = No niebla", fillcolor="#f5ccaf"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="rh <= 0.993\ngini = 0.5\nsamples = 9252\nvalue = [4540, 4712]\nclass = Niebla", fillcolor="#f8fbfe"] ;
+8 -> 9 ;
+10 [label="gini = 0.491\nsamples = 6838\nvalue = [3882, 2956]\nclass = No niebla", fillcolor="#f9e1d0"] ;
+9 -> 10 ;
+11 [label="gini = 0.397\nsamples = 2414\nvalue = [658, 1756]\nclass = Niebla", fillcolor="#83c2ef"] ;
+9 -> 11 ;
+12 [label="rh <= 0.994\ngini = 0.385\nsamples = 11050\nvalue = [8177, 2873]\nclass = No niebla", fillcolor="#eead7f"] ;
+8 -> 12 ;
+13 [label="gini = 0.352\nsamples = 9390\nvalue = [7247, 2143]\nclass = No niebla", fillcolor="#eda674"] ;
+12 -> 13 ;
+14 [label="gini = 0.493\nsamples = 1660\nvalue = [930, 730]\nclass = No niebla", fillcolor="#f9e4d4"] ;
+12 -> 14 ;
+}
